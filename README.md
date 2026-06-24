@@ -27,6 +27,7 @@ AI agent engineer passionate about building tools that make developers more prod
 
 ## Also Building
 
+- [**DASC7606-Deep-Learning-Review**](https://github.com/zwrong/DASC7606-Deep-Learning-Review) ⭐ 26 — Comprehensive review notes for HKU DASC7606 Deep Learning course. Covers core concepts, architectures, and exam prep with rich illustrations.
 - [**Calendar-Agent**](https://github.com/zwrong/Calendar-Agent) ⭐ 3 — AI Calendar Agent powered by DeepSeek API + CalDAV. Natural language CRUD on Apple Calendar, supports Chinese & English.
 - [**iCalendar**](https://github.com/zwrong/iCalendar) ⭐ 2 — Calendar MCP server for iCloud, letting AI agents read and manage your calendar seamlessly.
 - [**typora-opencode-theme**](https://github.com/zwrong/typora-opencode-theme) ⭐ 1 — A dark Typora theme inspired by OpenCode with GitHub Night code highlighting.
