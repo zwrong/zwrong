@@ -2,7 +2,7 @@
 
 <a href="https://x.com/Vinen77">X @Vinen</a> · <a href="https://www.xiaohongshu.com/user/profile/60e658c80000000001009ac9">rednote</a>
 
-AI agent engineer passionate about building tools that make developers more productive.
+AI agent engineer passionate about building tools helping people.
 
 ---
 
