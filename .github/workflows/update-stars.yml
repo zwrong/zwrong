@@ -21,20 +21,11 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
 
-      - name: Format and update star count
+      - name: Update Vibe-Trading star count
         run: |
-          STARS=${{ env.STARS }}
-
-          if [ "$STARS" -ge 10000 ]; then
-            K=$(( STARS / 1000 ))
-            FORMATTED="${K}K"
-          else
-            K=$(echo "scale=1; $STARS / 1000" | bc)
-            FORMATTED="${K}K"
-          fi
-
-          sed -i "s/\(Vibe-Trading\) ⭐ [0-9.]*K/\1 ⭐ ${FORMATTED}/" README.md
-          echo "Vibe-Trading stars updated to ${FORMATTED}"
+          K=$(echo "scale=1; ${{ env.STARS }} / 1000" | bc)
+          sed -i "s/\(Vibe-Trading\) ⭐ [0-9.]*K/\1 ⭐ ${K}K/" README.md
+          echo "Vibe-Trading: ${{ env.STARS }} → ${K}K"
 
       - name: Get Paper2Slides stars
         run: |
@@ -43,20 +34,11 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
 
-      - name: Format and update Paper2Slides star count
+      - name: Update Paper2Slides star count
         run: |
-          STARS=${{ env.P2S_STARS }}
-
-          if [ "$STARS" -ge 10000 ]; then
-            K=$(( STARS / 1000 ))
-            FORMATTED="${K}K"
-          else
-            K=$(echo "scale=1; $STARS / 1000" | bc)
-            FORMATTED="${K}K"
-          fi
-
-          sed -i "s/\(Paper2Slides\) ⭐ [0-9.]*K/\1 ⭐ ${FORMATTED}/" README.md
-          echo "Paper2Slides stars updated to ${FORMATTED}"
+          K=$(echo "scale=1; ${{ env.P2S_STARS }} / 1000" | bc)
+          sed -i "s/\(Paper2Slides\) ⭐ [0-9.]*K/\1 ⭐ ${K}K/" README.md
+          echo "Paper2Slides: ${{ env.P2S_STARS }} → ${K}K"
 
       - name: Commit if changed
         run: |
