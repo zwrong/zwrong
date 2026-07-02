@@ -1,0 +1,71 @@
+name: Update Star Counts
+
+on:
+  schedule:
+    - cron: '0 0 * * *'   # daily at midnight
+  workflow_dispatch:       # manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update-stars:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Get Vibe-Trading stars
+        run: |
+          STARS=$(gh api repos/HKUDS/Vibe-Trading --jq '.stargazers_count')
+          echo "STARS=$STARS" >> $GITHUB_ENV
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Format and update star count
+        run: |
+          STARS=${{ env.STARS }}
+
+          if [ "$STARS" -ge 10000 ]; then
+            K=$(( STARS / 1000 ))
+            FORMATTED="${K}K"
+          else
+            K=$(echo "scale=1; $STARS / 1000" | bc)
+            FORMATTED="${K}K"
+          fi
+
+          sed -i "s/\(Vibe-Trading\) ⭐ [0-9.]*K/\1 ⭐ ${FORMATTED}/" README.md
+          echo "Vibe-Trading stars updated to ${FORMATTED}"
+
+      - name: Get Paper2Slides stars
+        run: |
+          STARS=$(gh api repos/HKUDS/Paper2Slides --jq '.stargazers_count')
+          echo "P2S_STARS=$STARS" >> $GITHUB_ENV
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Format and update Paper2Slides star count
+        run: |
+          STARS=${{ env.P2S_STARS }}
+
+          if [ "$STARS" -ge 10000 ]; then
+            K=$(( STARS / 1000 ))
+            FORMATTED="${K}K"
+          else
+            K=$(echo "scale=1; $STARS / 1000" | bc)
+            FORMATTED="${K}K"
+          fi
+
+          sed -i "s/\(Paper2Slides\) ⭐ [0-9.]*K/\1 ⭐ ${FORMATTED}/" README.md
+          echo "Paper2Slides stars updated to ${FORMATTED}"
+
+      - name: Commit if changed
+        run: |
+          if ! git diff --quiet README.md; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "chore: update star counts"
+            git push
+          else
+            echo "No changes — star counts are already current"
+          fi

@@ -8,7 +8,7 @@ AI agent engineer passionate about building tools helping people.
 
 ## Vibe Trading
 
-[**Vibe-Trading**](https://github.com/HKUDS/Vibe-Trading) ⭐ 13k+ — Your personal AI trading agent. Multi-agent architecture for quantitative research, backtesting, risk management, and auto-trading — all via natural language.
+[**Vibe-Trading**](https://github.com/HKUDS/Vibe-Trading) ⭐ 17K — Your personal AI trading agent. Multi-agent architecture for quantitative research, backtesting, risk management, and auto-trading — all via natural language.
 
 **My contributions:**
 - [`feat(cli):` add `vibe-trading resume <session-id>` and exit session-id display](https://github.com/HKUDS/Vibe-Trading/pull/218) — Enables users to resume interrupted trading sessions by ID, plus shows the session ID on exit for easy recovery.
@@ -17,7 +17,7 @@ AI agent engineer passionate about building tools helping people.
 
 ## Paper2Slides
 
-[**Paper2Slides**](https://github.com/HKUDS/Paper2Slides) ⭐ 3.7k+ — Convert research papers, reports, and documents into professional slides and posters with one command. Supports PDF, Word, Excel, PowerPoint, Markdown.
+[**Paper2Slides**](https://github.com/HKUDS/Paper2Slides) ⭐ 3.7K — Convert research papers, reports, and documents into professional slides and posters with one command. Supports PDF, Word, Excel, PowerPoint, Markdown.
 
 **My contributions:**
 - [Bug: Dependency resolution failed & version conflict with fastapi/anyio during installation](https://github.com/HKUDS/Paper2Slides/issues/1) — Identified and reported a critical install-time dependency conflict.
