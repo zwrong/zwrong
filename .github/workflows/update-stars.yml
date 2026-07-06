@@ -24,7 +24,7 @@ jobs:
       - name: Update Vibe-Trading star count
         run: |
           K=$(echo "scale=1; ${{ env.STARS }} / 1000" | bc)
-          sed -i "s/\(Vibe-Trading\) ⭐ [0-9.]*K/\1 ⭐ ${K}K/" README.md
+          sed -E -i "s/(\[\*\*Vibe-Trading\*\*\]\([^)]*\) ⭐ )([0-9.]+K)/\1${K}K/" README.md
           echo "Vibe-Trading: ${{ env.STARS }} → ${K}K"
 
       - name: Get Paper2Slides stars
@@ -37,7 +37,7 @@ jobs:
       - name: Update Paper2Slides star count
         run: |
           K=$(echo "scale=1; ${{ env.P2S_STARS }} / 1000" | bc)
-          sed -i "s/\(Paper2Slides\) ⭐ [0-9.]*K/\1 ⭐ ${K}K/" README.md
+          sed -E -i "s/(\[\*\*Paper2Slides\*\*\]\([^)]*\) ⭐ )([0-9.]+K)/\1${K}K/" README.md
           echo "Paper2Slides: ${{ env.P2S_STARS }} → ${K}K"
 
       - name: Commit if changed
