@@ -8,7 +8,7 @@ AI agent engineer passionate about building tools helping people.
 
 ## Vibe Trading
 
-[**Vibe-Trading**](https://github.com/HKUDS/Vibe-Trading) ⭐ 22.9K — Your personal AI trading agent. Multi-agent architecture for quantitative research, backtesting, risk management, and auto-trading — all via natural language.
+[**Vibe-Trading**](https://github.com/HKUDS/Vibe-Trading) ⭐ 23.7K — Your personal AI trading agent. Multi-agent architecture for quantitative research, backtesting, risk management, and auto-trading — all via natural language.
 
 **My contributions:**
 - [`feat(cli):` add `vibe-trading resume <session-id>` and exit session-id display](https://github.com/HKUDS/Vibe-Trading/pull/218) — Enables users to resume interrupted trading sessions by ID, plus shows the session ID on exit for easy recovery.
