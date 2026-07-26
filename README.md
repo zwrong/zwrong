@@ -15,6 +15,13 @@ AI agent engineer passionate about building tools helping people.
 - [`feat(agent):` complete trace.jsonl overhaul — zero truncation, message entries, tool result offload](https://github.com/HKUDS/Vibe-Trading/pull/206) — Rewrote the agent tracing system to eliminate truncation, properly serialize conversation messages, and offload large tool results.
 - [`fix(loop):` enrich trace entries with call_id for tool-call correlation](https://github.com/HKUDS/Vibe-Trading/pull/168) — Added `call_id` to trace entries so tool calls and their results can be reliably correlated in logs and replay.
 
+## Kaku
+
+[**Kaku**](https://github.com/tw93/Kaku) ⭐ 5.7K — A fast, out-of-the-box terminal built for AI coding.
+
+**My contributions:**
+- [`feat(gui):` close tabs with `Backspace` in Tab Navigator](https://github.com/tw93/Kaku/pull/499) — Added Backspace-to-close in the built-in Tab Navigator: closes the selected tab while keeping the navigator open, with safe handling for the last remaining tab and confirmation for tabs with running processes.
+
 ## Paper2Slides
 
 [**Paper2Slides**](https://github.com/HKUDS/Paper2Slides) ⭐ 3.7K — Convert research papers, reports, and documents into professional slides and posters with one command. Supports PDF, Word, Excel, PowerPoint, Markdown.

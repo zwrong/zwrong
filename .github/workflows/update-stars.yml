@@ -40,6 +40,19 @@ jobs:
           sed -E -i "s/(\[\*\*Paper2Slides\*\*\]\([^)]*\) ⭐ )([0-9.]+K)/\1${K}K/" README.md
           echo "Paper2Slides: ${{ env.P2S_STARS }} → ${K}K"
 
+      - name: Get Kaku stars
+        run: |
+          STARS=$(gh api repos/tw93/Kaku --jq '.stargazers_count')
+          echo "KAKU_STARS=$STARS" >> $GITHUB_ENV
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Update Kaku star count
+        run: |
+          K=$(echo "scale=1; ${{ env.KAKU_STARS }} / 1000" | bc)
+          sed -E -i "s/(\[\*\*Kaku\*\*\]\([^)]*\) ⭐ )([0-9.]+K)/\1${K}K/" README.md
+          echo "Kaku: ${{ env.KAKU_STARS }} → ${K}K"
+
       - name: Commit if changed
         run: |
           if ! git diff --quiet README.md; then
