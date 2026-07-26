@@ -13,7 +13,7 @@ AI agent engineer passionate about building tools helping people.
 [Pi Package](https://pi.dev/packages/pi-discuss-mode?name=pi-discuss-mode) · **180+ monthly downloads** · [Demo video](https://github.com/user-attachments/assets/0a8cdc37-6413-4d6e-88ec-e0adec7fc036)
 
 - **Two-layer safety**: a `before_agent_start` hook injects the discussion-mode system prompt, while a `tool_call` interceptor acts as a real-time safety net — destructive operations are blocked even if the model ignores the prompt.
-- **One-command install**: published to the Pi package registry, `pi install pi-discuss-mode`. Actively maintained.
+- **One-command install**: published to the Pi package registry, `pi install pi-discuss-mode`.
 
 ---
 
