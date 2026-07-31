@@ -21,7 +21,7 @@ AI agent engineer passionate about building tools helping people.
 
 ### Vibe Trading
 
-[**Vibe-Trading**](https://github.com/HKUDS/Vibe-Trading) ⭐ 28.5K — Your personal AI trading agent. Multi-agent architecture for quantitative research, backtesting, risk management, and auto-trading — all via natural language.
+[**Vibe-Trading**](https://github.com/HKUDS/Vibe-Trading) ⭐ 28.8K — Your personal AI trading agent. Multi-agent architecture for quantitative research, backtesting, risk management, and auto-trading — all via natural language.
 
 **My contributions:**
 - [`feat(cli):` add `vibe-trading resume <session-id>` and exit session-id display](https://github.com/HKUDS/Vibe-Trading/pull/218) — Enables users to resume interrupted trading sessions by ID, plus shows the session ID on exit for easy recovery.
@@ -30,14 +30,14 @@ AI agent engineer passionate about building tools helping people.
 
 ### Kaku
 
-[**Kaku**](https://github.com/tw93/Kaku) ⭐ 5.6K — A fast, out-of-the-box terminal built for AI coding.
+[**Kaku**](https://github.com/tw93/Kaku) ⭐ 5.7K — A fast, out-of-the-box terminal built for AI coding.
 
 **My contributions:**
 - [`feat(gui):` close tabs with `Backspace` in Tab Navigator](https://github.com/tw93/Kaku/pull/499) — Added Backspace-to-close in the built-in Tab Navigator: closes the selected tab while keeping the navigator open, with safe handling for the last remaining tab and confirmation for tabs with running processes.
 
 ### Paper2Slides
 
-[**Paper2Slides**](https://github.com/HKUDS/Paper2Slides) ⭐ 3.7K — Convert research papers, reports, and documents into professional slides and posters with one command. Supports PDF, Word, Excel, PowerPoint, Markdown.
+[**Paper2Slides**](https://github.com/HKUDS/Paper2Slides) ⭐ 3.8K — Convert research papers, reports, and documents into professional slides and posters with one command. Supports PDF, Word, Excel, PowerPoint, Markdown.
 
 **My contributions:**
 - [Bug: Dependency resolution failed & version conflict with fastapi/anyio during installation](https://github.com/HKUDS/Paper2Slides/issues/1) — Identified and reported a critical install-time dependency conflict.
