@@ -8,7 +8,7 @@ AI agent engineer passionate about building tools helping people.
 
 ## pi-discuss-mode
 
-[**pi-discuss-mode**](https://github.com/zwrong/pi-discuss-mode) ⭐ 11 — A read-only discussion mode for Pi Coding Agent: discuss code safely, without changing a single line.
+[**pi-discuss-mode**](https://github.com/zwrong/pi-discuss-mode) ⭐ 12 — A read-only discussion mode for Pi Coding Agent: discuss code safely, without changing a single line.
 
 [Pi Package](https://pi.dev/packages/pi-discuss-mode?name=pi-discuss-mode) · **180+ monthly downloads** · [Demo video](https://github.com/user-attachments/assets/0a8cdc37-6413-4d6e-88ec-e0adec7fc036)
 
