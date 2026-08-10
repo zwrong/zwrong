@@ -24,6 +24,7 @@ AI agent engineer passionate about building tools helping people.
 [**Vibe-Trading**](https://github.com/HKUDS/Vibe-Trading) ⭐ 30.4K — Your personal AI trading agent. Multi-agent architecture for quantitative research, backtesting, risk management, and auto-trading — all via natural language.
 
 **My contributions:**
+- [`feat(cli):` add `vibe-trading update` self-upgrade command](https://github.com/HKUDS/Vibe-Trading/pull/1020) — One-command self-upgrade: checks PyPI for a newer `vibe-trading-ai` release, detects pip vs editable installs (giving `git pull` hints for dev checkouts), upgrades via pip, and verifies the new version — never downgrades.
 - [`feat(cli):` add `vibe-trading resume <session-id>` and exit session-id display](https://github.com/HKUDS/Vibe-Trading/pull/218) — Enables users to resume interrupted trading sessions by ID, plus shows the session ID on exit for easy recovery.
 - [`feat(agent):` complete trace.jsonl overhaul — zero truncation, message entries, tool result offload](https://github.com/HKUDS/Vibe-Trading/pull/206) — Rewrote the agent tracing system to eliminate truncation, properly serialize conversation messages, and offload large tool results.
 - [`fix(loop):` enrich trace entries with call_id for tool-call correlation](https://github.com/HKUDS/Vibe-Trading/pull/168) — Added `call_id` to trace entries so tool calls and their results can be reliably correlated in logs and replay.
