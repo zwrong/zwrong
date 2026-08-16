@@ -21,7 +21,7 @@ AI agent engineer passionate about building tools helping people.
 
 ### Vibe Trading
 
-[**Vibe-Trading**](https://github.com/HKUDS/Vibe-Trading) ⭐ 30.8K — Your personal AI trading agent. Multi-agent architecture for quantitative research, backtesting, risk management, and auto-trading — all via natural language.
+[**Vibe-Trading**](https://github.com/HKUDS/Vibe-Trading) ⭐ 30.9K — Your personal AI trading agent. Multi-agent architecture for quantitative research, backtesting, risk management, and auto-trading — all via natural language.
 
 **My contributions:**
 - [`feat(cli):` add `vibe-trading update` self-upgrade command](https://github.com/HKUDS/Vibe-Trading/pull/1020) — One-command self-upgrade: checks PyPI for a newer `vibe-trading-ai` release, detects pip vs editable installs (giving `git pull` hints for dev checkouts), upgrades via pip, and verifies the new version — never downgrades.
