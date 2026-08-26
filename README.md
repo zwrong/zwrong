@@ -21,7 +21,7 @@ AI agent engineer passionate about building tools helping people.
 
 ### Vibe Trading
 
-[**Vibe-Trading**](https://github.com/HKUDS/Vibe-Trading) ⭐ 31.6K — Your personal AI trading agent. Multi-agent architecture for quantitative research, backtesting, risk management, and auto-trading — all via natural language.
+[**Vibe-Trading**](https://github.com/HKUDS/Vibe-Trading) ⭐ 31.7K — Your personal AI trading agent. Multi-agent architecture for quantitative research, backtesting, risk management, and auto-trading — all via natural language.
 
 **My contributions:**
 - [`feat(cli):` add `vibe-trading update` self-upgrade command](https://github.com/HKUDS/Vibe-Trading/pull/1020) — One-command self-upgrade: checks PyPI for a newer `vibe-trading-ai` release, detects pip vs editable installs (giving `git pull` hints for dev checkouts), upgrades via pip, and verifies the new version — never downgrades.
@@ -31,7 +31,7 @@ AI agent engineer passionate about building tools helping people.
 
 ### Kaku
 
-[**Kaku**](https://github.com/tw93/Kaku) ⭐ 5.7K — A fast, out-of-the-box terminal built for AI coding.
+[**Kaku**](https://github.com/tw93/Kaku) ⭐ 5.8K — A fast, out-of-the-box terminal built for AI coding.
 
 **My contributions:**
 - [`feat(gui):` close tabs with `Backspace` in Tab Navigator](https://github.com/tw93/Kaku/pull/499) — Added Backspace-to-close in the built-in Tab Navigator: closes the selected tab while keeping the navigator open, with safe handling for the last remaining tab and confirmation for tabs with running processes.
