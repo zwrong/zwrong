@@ -53,14 +53,41 @@ jobs:
           sed -E -i "s/(\[\*\*Kaku\*\*\]\([^)]*\) ⭐ )([0-9.]+K)/\1${K}K/" README.md
           echo "Kaku: ${{ env.KAKU_STARS }} → ${K}K"
 
+      - name: Get pi-discuss-mode stars
+        run: |
+          STARS=$(gh api repos/zwrong/pi-discuss-mode --jq '.stargazers_count')
+          echo "PDM_STARS=$STARS" >> $GITHUB_ENV
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Update pi-discuss-mode star count
+        run: |
+          sed -E -i "s/(\[\*\*pi-discuss-mode\*\*\]\([^)]*\) ⭐ )[0-9]+/\1${{ env.PDM_STARS }}/" README.md
+          echo "pi-discuss-mode: ${{ env.PDM_STARS }} stars"
+
+      - name: Get pi-discuss-mode downloads
+        run: |
+          # Lifetime total. The npm window starts at the first publish date.
+          START="2026-07-03"
+          END=$(date -u +%F)
+          TOTAL=$(curl -fsS "https://api.npmjs.org/downloads/point/${START}:${END}/pi-discuss-mode" | jq -r '.downloads')
+          ROUNDED=$(( TOTAL / 100 * 100 ))
+          echo "PDM_DOWNLOADS=$ROUNDED" >> $GITHUB_ENV
+          echo "pi-discuss-mode: ${TOTAL} downloads since ${START} → ${ROUNDED}+"
+
+      - name: Update pi-discuss-mode download count
+        run: |
+          sed -E -i "s/\*\*[0-9]+\+ downloads\*\*/**${{ env.PDM_DOWNLOADS }}+ downloads**/" README.md
+          echo "pi-discuss-mode: ${{ env.PDM_DOWNLOADS }}+ downloads"
+
       - name: Commit if changed
         run: |
           if ! git diff --quiet README.md; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
             git add README.md
-            git commit -m "chore: update star counts"
+            git commit -m "chore: update star and download counts"
             git push
           else
-            echo "No changes — star counts are already current"
+            echo "No changes — counts are already current"
           fi
