@@ -21,7 +21,7 @@ AI agent engineer passionate about building tools helping people.
 
 ### Vibe Trading
 
-[**Vibe-Trading**](https://github.com/HKUDS/Vibe-Trading) ⭐ 37.0K — Your personal AI trading agent. Multi-agent architecture for quantitative research, backtesting, risk management, and auto-trading — all via natural language.
+[**Vibe-Trading**](https://github.com/HKUDS/Vibe-Trading) ⭐ 37.1K — Your personal AI trading agent. Multi-agent architecture for quantitative research, backtesting, risk management, and auto-trading — all via natural language.
 
 **My contributions:**
 - [`docs:` setup section named the wrong default provider](https://github.com/HKUDS/Vibe-Trading/issues/1609) — Reported that the setup docs identified the wrong shipped default; fixed across all 7 language READMEs, and the news entry cites issue #1609.
