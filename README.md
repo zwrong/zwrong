@@ -10,7 +10,7 @@ AI agent engineer passionate about building tools helping people.
 
 [**pi-discuss-mode**](https://github.com/zwrong/pi-discuss-mode) ⭐ 10 — A read-only discussion mode for Pi Coding Agent: discuss code safely, without changing a single line.
 
-[Pi Package](https://pi.dev/packages/pi-discuss-mode?name=pi-discuss-mode) · **300+ downloads** · [Demo video](https://github.com/user-attachments/assets/0a8cdc37-6413-4d6e-88ec-e0adec7fc036)
+[Pi Package](https://pi.dev/packages/pi-discuss-mode?name=pi-discuss-mode) · **400+ downloads** · [Demo video](https://github.com/user-attachments/assets/0a8cdc37-6413-4d6e-88ec-e0adec7fc036)
 
 - **Two-layer safety**: a `before_agent_start` hook injects the discussion-mode system prompt, while a `tool_call` interceptor acts as a real-time safety net — destructive operations are blocked even if the model ignores the prompt.
 - **One-command install**: published to the Pi package registry, `pi install pi-discuss-mode`.
@@ -21,7 +21,7 @@ AI agent engineer passionate about building tools helping people.
 
 ### Vibe Trading
 
-[**Vibe-Trading**](https://github.com/HKUDS/Vibe-Trading) ⭐ 38.9K — Your personal AI trading agent. Multi-agent architecture for quantitative research, backtesting, risk management, and auto-trading — all via natural language.
+[**Vibe-Trading**](https://github.com/HKUDS/Vibe-Trading) ⭐ 39.0K — Your personal AI trading agent. Multi-agent architecture for quantitative research, backtesting, risk management, and auto-trading — all via natural language.
 
 **My contributions:**
 - [`docs:` setup section named the wrong default provider](https://github.com/HKUDS/Vibe-Trading/issues/1609) — Reported that the setup docs identified the wrong shipped default; fixed across all 7 language READMEs, and the news entry cites issue #1609.
